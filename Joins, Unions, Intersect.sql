@@ -1,4 +1,4 @@
-/* NOTES: This is a homework assignment for the second course in my Database Design & SQL certificate, using MSSQL and SalesDB. My codes all ran properly and I recieved an A on the assignment. */
+/* NOTES: This is a homework assignment for the second course in my Database Design & SQL certificate, using MSSQL and teo databases. My codes all ran properly and I recieved an A on the assignment. */
 
 
 GO
