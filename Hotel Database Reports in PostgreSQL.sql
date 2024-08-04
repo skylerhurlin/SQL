@@ -3,7 +3,7 @@
 SELECT DISTINCT i_s.items_services_id, items_services_name, s.supplier_name, 
 amt_stock, reorder_amt, reorder_yn,
   	(SELECT MAX(order_date) 
- 	 FROM is_per_order AS ipo2 
+ 	FROM is_per_order AS ipo2 
   	JOIN orders AS o2 
   	ON ipo2.order_id = o2.order_id
   	WHERE ipo2.items_services_id = i_s.items_services_id) AS last_ordered
@@ -54,6 +54,3 @@ FROM reviews AS r
 JOIN hotels AS h ON r.hotel_id = h.hotel_id
 GROUP BY r.hotel_id, hotel_name
 ORDER BY r.hotel_id;
-
-
-
