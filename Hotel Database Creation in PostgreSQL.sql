@@ -1,7 +1,5 @@
 -- Creating a database in PostgreSQL. CSV data was then uploaded using PostgreSQL's Import function.
 
-CREATE DATABASE hotel_db;
-
 CREATE TABLE "suppliers" (
   "supplier_id" SERIAL,
   "supplier" VARCHAR(180),
@@ -54,9 +52,6 @@ CREATE TABLE "items_services" (
   "date_oos" DATE,
   "last_ordered" DATE,
   PRIMARY KEY ("items_services_id"),
-  CONSTRAINT "FK_items_services.last_ordered"
-    FOREIGN KEY ("last_ordered")
-      REFERENCES "orders"("order_date"),
   CONSTRAINT "FK_items_services.supplier_id"
     FOREIGN KEY ("supplier_id")
       REFERENCES "suppliers"("supplier_id")
