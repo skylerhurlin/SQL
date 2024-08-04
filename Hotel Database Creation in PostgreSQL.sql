@@ -49,8 +49,6 @@ CREATE TABLE "items_services" (
   "amt_stock" INTEGER,
   "reorder_amt" INTEGER,
   "reorder_yn" BOOLEAN,
-  "date_oos" DATE,
-  "last_ordered" DATE,
   PRIMARY KEY ("items_services_id"),
   CONSTRAINT "FK_items_services.supplier_id"
     FOREIGN KEY ("supplier_id")
