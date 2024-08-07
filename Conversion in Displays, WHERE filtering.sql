@@ -1,4 +1,4 @@
-/* NOTES: This is a homework assignment for the second course in my Database Design & SQL certificate, using MSSQL and TVDB. My codes all ran properly and I recieved an A on the assignment. */
+/* NOTES: This is a homework assignment for the second course in my Database Design & SQL certificate, using MSSQL and TVDB. My codes all ran properly and I recieved an A on the assignment.*/
 
 GO
 	
@@ -71,7 +71,7 @@ SELECT DisplayName AS 'Channel Name',
 		SortOrder AS 'Sort Order'
 FROM	CHANNEL
 WHERE	SortOrder BETWEEN 700 AND 799
-		AND ExternalID IS NOT NULL
+AND 	ExternalID IS NOT NULL
 ORDER BY SortOrder;
 
 GO
