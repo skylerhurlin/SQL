@@ -135,6 +135,8 @@ CREATE TABLE "reservations" (
       REFERENCES "hotels"("hotel_id")
 );
 
+-- The below table is unique in that it has a composite primary key that uses the primary keys from the items/services table and the orders table. It shows which items were in which order.
+
 CREATE TABLE "is_per_order" (
   "(order_id, items_services_id)" (INTEGER, INTEGER),
   "quantity" INTEGER,
